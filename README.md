@@ -1,7 +1,9 @@
 PomeloLua
 ==================
-PomeloLua shows how to use pomelo in coco2dx lua.
-It is based on [libpomelo](https://github.com/NetEase/libpomelo) and can be used by [cocos2d-x](https://github.com/cocos2d/cocos2d-x) in Lua
+PomeloLua helps you to use pomelo in coco2dx lua project.
+
+It is based on [libpomelo](https://github.com/NetEase/libpomelo)
+
 The server side is [chatofpomelo-websocket](https://github.com/NetEase/chatofpomelo-websocket).
 
 ##iOS
@@ -10,22 +12,39 @@ The server side is [chatofpomelo-websocket](https://github.com/NetEase/chatofpom
 * Copy the compiled library folder to cocos2dx project
 * Configure cocos2dx project (Assume LIBPOMELO_ROOT is "$(SRCROOT)/../libpomelo")
 	* Add include path: 
+
       LIBPOMELO_ROOT/include (example: "$(SRCROOT)/../libpomelo/include")
+
       LIBPOMELO_ROOT/deps/uv/include (example: "$(SRCROOT)/../libpomelo/deps/uv/include")
+
       LIBPOMELO_ROOT/deps/jansson/src (example: "$(SRCROOT)/../libpomelo/deps/jansson/src")
+
       to Header Search Paths of project.
+
 	* Add library path: 
+
       LIBPOMELO_ROOT/build/Default-iphoneos 
+
       (example: "$(SRCROOT)/../libpomelo/build/Default-iphoneos")
+
       LIBPOMELO_ROOT/deps/uv/build/Default-iphoneos
+
       (example: "$(SRCROOT)/../libpomelo/deps/uv/build/Default-iphoneos")
+
       LIBPOMELO_ROOT/deps/jansson/build/Default-iphoneos
+
       (example: "$(SRCROOT)/../libpomelo/deps/jansson/build/Default-iphoneos")
-      to the Library Search Paths of project. 
+
+      to the Library Search Paths of project.
+ 
 	* Add linker flags: 
+
       -ljansson
+
       -luv
+
       -lpomelo
+
       to the Other Linker Flags of project.
 
 ##Android
