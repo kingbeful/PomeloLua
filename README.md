@@ -6,6 +6,8 @@ It is based on [libpomelo](https://github.com/NetEase/libpomelo)
 
 The server side is [chatofpomelo-websocket](https://github.com/NetEase/chatofpomelo-websocket).
 
+[JSON4Lua](http://json.luaforge.net/) is used to parse the json string
+
 ##iOS
 
 * Build the library of libpomelo for iOS or iOS simulator. 
