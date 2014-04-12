@@ -10,6 +10,8 @@ The server side is [chatofpomelo-websocket](https://github.com/NetEase/chatofpom
 
 ##iOS
 
+To use PomeloLua in iOS, you need to:
+
 * Build the library of libpomelo for iOS or iOS simulator. 
 * Copy the compiled library folder to cocos2dx project
 * Configure cocos2dx project (Assume LIBPOMELO_ROOT is "$(SRCROOT)/../libpomelo")
